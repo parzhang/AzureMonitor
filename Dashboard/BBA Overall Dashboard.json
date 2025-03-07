@@ -1,0 +1,5559 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 28,
+  "links": [],
+  "panels": [
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 0,
+        "y": 0
+      },
+      "id": 31,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<p style=\"text-align: center;\">Virtual Machine</p>\r\n<p style=\"text-align: center;\">\r\n<img src=\"https://www.azure.cn/Images/marketing-resource/media/images/production/icon-virtual-machines.png\" style=\"width: 40%;\">\r\n</p>",
+        "mode": "html"
+      },
+      "pluginVersion": "10.4.15",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 4,
+        "y": 0
+      },
+      "id": 32,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<p style=\"text-align: center;\">PostgreSQL</p>\r\n<p style=\"text-align: center;\">\r\n<img src=\"https://www.azure.cn/Images/marketing-resource/css/postgressql_icon@2x.svg\" style=\"width: 40%;\">\r\n</p>\r\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "10.4.15",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 8,
+        "y": 0
+      },
+      "id": 33,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<p style=\"text-align: center;\">MySQL</p>\r\n<p style=\"text-align: center;\">\r\n<img src=\"https://www.azure.cn/Images/marketing-resource/css/mysql_database_on_azure_icon@2x.png\" style=\"width: 40%;\">\r\n</p>\r\n",
+        "mode": "html"
+      },
+      "pluginVersion": "10.4.15",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 12,
+        "y": 0
+      },
+      "id": 34,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<p style=\"text-align: center;\">Redis</p>\r\n<p style=\"text-align: center;\">\r\n<img src=\"https://www.azure.cn/Images/marketing-resource/css/azure-redis-cache@2x.svg\" style=\"width: 40%;\">\r\n</p>\r\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "10.4.15",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 16,
+        "y": 0
+      },
+      "id": 35,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<p style=\"text-align: center;\">Storage Account</p>\r\n<p style=\"text-align: center;\">\r\n<img src=\"https://www.azure.cn/Images/marketing-resource/css/storage@2x.png\" style=\"width: 40%;\">\r\n</p>\r\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "10.4.15",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 20,
+        "y": 0
+      },
+      "id": 36,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<p style=\"text-align: center;\">Key Vault</p>\r\n<p style=\"text-align: center;\">\r\n<img src=\"https://www.azure.cn/Images/marketing-resource/media/images/production/key-vault@2x.png\" style=\"width: 40%;\">\r\n</p>\r\n\r\n\r\n",
+        "mode": "markdown"
+      },
+      "pluginVersion": "10.4.15",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 0,
+        "y": 4
+      },
+      "id": 1,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Healthy\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'Percentage CPU' THEN value END) AS \"Percentage CPU\",\r\n    MAX(CASE WHEN metric_name = 'Available Memory Percentage' THEN value END) AS \"Available Memory Percentage\",\r\n    MAX(CASE WHEN metric_name = 'VmAvailabilityMetric' THEN value END) AS \"VmAvailabilityMetric\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.compute/virtualmachines' and severity = 0;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 4,
+        "y": 4
+      },
+      "id": 7,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Healthy\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'cpu_percent' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'memory_percent' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'storage_percent' THEN value END) AS \"Storage %\",\r\n \tMAX(CASE WHEN metric_name = 'is_db_alive' THEN value END) AS \"DB Alive\",\r\n \tMAX(CASE WHEN metric_name = 'connections_failed' THEN value END) AS \"Conn Failed\", \t\r\n \tMAX(CASE WHEN metric_name = 'deadlocks' THEN value END) AS \"Dead Locks\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.dbforpostgresql/flexibleservers' and severity = 0;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 8,
+        "y": 4
+      },
+      "id": 12,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Healthty\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'cpu_percent' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'memory_percent' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'storage_percent' THEN value END) AS \"Storage %\",\r\n \tMAX(CASE WHEN metric_name = 'aborted_connections' THEN value END) AS \"Aborted Conn\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.dbformysql/flexibleservers' and severity = 0;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 12,
+        "y": 4
+      },
+      "id": 18,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Healthy\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'percentProcessorTime' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'usedmemorypercentage' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'serverLoad' THEN value END) AS \"Server Load %\",\r\n \tMAX(CASE WHEN metric_name = 'errors' THEN value END) AS \"Errors\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.cache/redis' and severity = 0;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 16,
+        "y": 4
+      },
+      "id": 28,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Healthy\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'Availability' THEN value END) AS \"Availability %\",\r\n    MAX(CASE WHEN metric_name = 'UsedCapacity' THEN value END) AS \"Used Capacity\",\r\n    MAX(CASE WHEN metric_name = 'SuccessE2ELatency' THEN value END) AS \"E2E Latency\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.storage/storageaccounts' and severity = 0;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 20,
+        "y": 4
+      },
+      "id": 24,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Healthy\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'Availability' THEN value END) AS \"Availability %\",\r\n    MAX(CASE WHEN metric_name = 'SaturationShoebox' THEN value END) AS \"Capacity Used %\",\r\n    MAX(CASE WHEN metric_name = 'ServiceApiLatency' THEN value END) AS \"Service API Latency (ms)\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.keyvault/vaults' and severity = 0;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 0,
+        "y": 7
+      },
+      "id": 3,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Warning\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'Percentage CPU' THEN value END) AS \"Percentage CPU\",\r\n    MAX(CASE WHEN metric_name = 'Available Memory Percentage' THEN value END) AS \"Available Memory Percentage\",\r\n    MAX(CASE WHEN metric_name = 'VmAvailabilityMetric' THEN value END) AS \"VmAvailabilityMetric\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.compute/virtualmachines' and severity = 1;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 4,
+        "y": 7
+      },
+      "id": 8,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Warning\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'cpu_percent' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'memory_percent' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'storage_percent' THEN value END) AS \"Storage %\",\r\n \tMAX(CASE WHEN metric_name = 'is_db_alive' THEN value END) AS \"DB Alive\",\r\n \tMAX(CASE WHEN metric_name = 'connections_failed' THEN value END) AS \"Conn Failed\", \t\r\n \tMAX(CASE WHEN metric_name = 'deadlocks' THEN value END) AS \"Dead Locks\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.dbforpostgresql/flexibleservers' and severity = 1;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 8,
+        "y": 7
+      },
+      "id": 13,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Warning\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'cpu_percent' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'memory_percent' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'storage_percent' THEN value END) AS \"Storage %\",\r\n \tMAX(CASE WHEN metric_name = 'aborted_connections' THEN value END) AS \"Aborted Conn\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.dbformysql/flexibleservers' and severity = 1;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 12,
+        "y": 7
+      },
+      "id": 19,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Warning\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'percentProcessorTime' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'usedmemorypercentage' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'serverLoad' THEN value END) AS \"Server Load %\",\r\n \tMAX(CASE WHEN metric_name = 'errors' THEN value END) AS \"Errors\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.cache/redis' and severity = 1;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 16,
+        "y": 7
+      },
+      "id": 29,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Warning\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'Availability' THEN value END) AS \"Availability %\",\r\n    MAX(CASE WHEN metric_name = 'UsedCapacity' THEN value END) AS \"Used Capacity\",\r\n    MAX(CASE WHEN metric_name = 'SuccessE2ELatency' THEN value END) AS \"E2E Latency\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.storage/storageaccounts' and severity = 1;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "yellow",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 20,
+        "y": 7
+      },
+      "id": 25,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Warning\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'Availability' THEN value END) AS \"Availability %\",\r\n    MAX(CASE WHEN metric_name = 'SaturationShoebox' THEN value END) AS \"Capacity Used %\",\r\n    MAX(CASE WHEN metric_name = 'ServiceApiLatency' THEN value END) AS \"Service API Latency (ms)\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.keyvault/vaults' and severity = 1;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 0,
+        "y": 10
+      },
+      "id": 4,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Critical\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'Percentage CPU' THEN value END) AS \"Percentage CPU\",\r\n    MAX(CASE WHEN metric_name = 'Available Memory Percentage' THEN value END) AS \"Available Memory Percentage\",\r\n    MAX(CASE WHEN metric_name = 'VmAvailabilityMetric' THEN value END) AS \"VmAvailabilityMetric\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.compute/virtualmachines' and severity = 2;\r\n",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 4,
+        "y": 10
+      },
+      "id": 9,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Critical\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'cpu_percent' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'memory_percent' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'storage_percent' THEN value END) AS \"Storage %\",\r\n \tMAX(CASE WHEN metric_name = 'is_db_alive' THEN value END) AS \"DB Alive\",\r\n \tMAX(CASE WHEN metric_name = 'connections_failed' THEN value END) AS \"Conn Failed\", \t\r\n \tMAX(CASE WHEN metric_name = 'deadlocks' THEN value END) AS \"Dead Locks\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.dbforpostgresql/flexibleservers' and severity = 2;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 8,
+        "y": 10
+      },
+      "id": 14,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Critical\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'cpu_percent' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'memory_percent' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'storage_percent' THEN value END) AS \"Storage %\",\r\n \tMAX(CASE WHEN metric_name = 'aborted_connections' THEN value END) AS \"Aborted Conn\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.dbformysql/flexibleservers' and severity = 2;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 12,
+        "y": 10
+      },
+      "id": 20,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Critical\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'percentProcessorTime' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'usedmemorypercentage' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'serverLoad' THEN value END) AS \"Server Load %\",\r\n \tMAX(CASE WHEN metric_name = 'errors' THEN value END) AS \"Errors\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.cache/redis' and severity = 2;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 16,
+        "y": 10
+      },
+      "id": 30,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Critical\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'Availability' THEN value END) AS \"Availability %\",\r\n    MAX(CASE WHEN metric_name = 'UsedCapacity' THEN value END) AS \"Used Capacity\",\r\n    MAX(CASE WHEN metric_name = 'SuccessE2ELatency' THEN value END) AS \"E2E Latency\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.storage/storageaccounts' and severity = 2;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 3,
+        "x": 20,
+        "y": 10
+      },
+      "id": 26,
+      "options": {
+        "colorMode": "background",
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showPercentChange": false,
+        "textMode": "value_and_name",
+        "wideLayout": true
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT COUNT(resource_name) AS \"Critical\" FROM \r\n(\r\nSELECT \r\n\tMAX(severity) as severity,\r\n    resource_name,\r\n    MAX(CASE WHEN metric_name = 'Availability' THEN value END) AS \"Availability %\",\r\n    MAX(CASE WHEN metric_name = 'SaturationShoebox' THEN value END) AS \"Capacity Used %\",\r\n    MAX(CASE WHEN metric_name = 'ServiceApiLatency' THEN value END) AS \"Service API Latency (ms)\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group,\r\n    subscription_name,\r\n    resource_type\r\nFROM \r\n    public.metrics\r\nGROUP BY \r\n    subscription_name, resource_group, resource_type, resource_name\r\n)\r\nWHERE resource_type = 'microsoft.keyvault/vaults' and severity = 2;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "stat"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 13
+      },
+      "id": 5,
+      "panels": [],
+      "title": "Virtual Machine",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "grafana-postgresql-datasource",
+        "uid": "${ds}"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "color-text"
+            },
+            "filterable": false,
+            "inspect": false,
+            "width": 100
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "text",
+                "value": null
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Severity"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 104
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "#EAB839",
+                      "value": 1
+                    },
+                    {
+                      "color": "#F2495C",
+                      "value": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "0": {
+                        "index": 2,
+                        "text": "Healthy"
+                      },
+                      "1": {
+                        "index": 0,
+                        "text": "Warning"
+                      },
+                      "2": {
+                        "index": 1,
+                        "text": "Critical"
+                      }
+                    },
+                    "type": "value"
+                  }
+                ]
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "color-background"
+                }
+              },
+              {
+                "id": "custom.align",
+                "value": "center"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Metric Date"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 186
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Percentage CPU"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 219
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "mode": "lcd",
+                  "type": "gauge",
+                  "valueDisplayMode": "text"
+                }
+              },
+              {
+                "id": "custom.align",
+                "value": "left"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Percentage CPU Severity"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 20
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "#EAB839",
+                      "value": 1
+                    },
+                    {
+                      "color": "red",
+                      "value": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "color-text"
+                }
+              },
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "from": 0,
+                      "result": {
+                        "index": 0,
+                        "text": "●"
+                      },
+                      "to": 2
+                    },
+                    "type": "range"
+                  }
+                ]
+              },
+              {
+                "id": "displayName",
+                "value": "‎"
+              },
+              {
+                "id": "custom.align",
+                "value": "right"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Available Memory % Severity"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 20
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "color-text"
+                }
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "#EAB839",
+                      "value": 1
+                    },
+                    {
+                      "color": "red",
+                      "value": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "from": 0,
+                      "result": {
+                        "index": 0,
+                        "text": "●"
+                      },
+                      "to": 2
+                    },
+                    "type": "range"
+                  }
+                ]
+              },
+              {
+                "id": "displayName",
+                "value": "‎"
+              },
+              {
+                "id": "custom.align",
+                "value": "right"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Availability Severity"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 20
+              },
+              {
+                "id": "displayName",
+                "value": "‎"
+              },
+              {
+                "id": "custom.cellOptions",
+                "value": {
+                  "type": "color-text"
+                }
+              },
+              {
+                "id": "thresholds",
+                "value": {
+                  "mode": "absolute",
+                  "steps": [
+                    {
+                      "color": "green",
+                      "value": null
+                    },
+                    {
+                      "color": "#EAB839",
+                      "value": 1
+                    },
+                    {
+                      "color": "red",
+                      "value": 2
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "from": 0,
+                      "result": {
+                        "index": 0,
+                        "text": "●"
+                      },
+                      "to": 2
+                    },
+                    "type": "range"
+                  }
+                ]
+              },
+              {
+                "id": "custom.align",
+                "value": "right"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Availability"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 111
+              },
+              {
+                "id": "custom.align",
+                "value": "left"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Resource Name"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 124
+              },
+              {
+                "id": "custom.align",
+                "value": "center"
+              },
+              {
+                "id": "links",
+                "value": [
+                  {
+                    "targetBlank": true,
+                    "title": "",
+                    "url": "https://grafana-par-dqhhgeb6fac7hsbz.eus.grafana.azure.com/d/ceeone0fjvym8e/azure-virtual-machine?orgId=1&refresh=1m&var-Subscription=${__data.fields['Subscription ID']}&var-ResourceGroup=${__data.fields['Resource Group']}&var-ResourceName=${__data.fields['Resource Name']}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Resource Group"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 157
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Subscription"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 315
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Resource Type"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 150
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Available Memory %"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 159
+              },
+              {
+                "id": "custom.align",
+                "value": "left"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Subscription ID"
+            },
+            "properties": [
+              {
+                "id": "custom.hidden",
+                "value": true
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 14
+      },
+      "id": 2,
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "countRows": false,
+          "enablePagination": false,
+          "fields": "",
+          "reducer": [
+            "sum"
+          ],
+          "show": false
+        },
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": true,
+            "displayName": "Severity"
+          }
+        ]
+      },
+      "pluginVersion": "10.4.15",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "SELECT \r\n\tMAX(severity) as \"Severity\",\r\n    resource_name as \"Resource Name\",\r\n    MAX(CASE WHEN metric_name = 'Percentage CPU' THEN severity END) AS \"Percentage CPU Severity\",\r\n    MAX(CASE WHEN metric_name = 'Percentage CPU' THEN value END) AS \"Percentage CPU\",\r\n    MAX(CASE WHEN metric_name = 'Available Memory Percentage' THEN severity END) AS \"Available Memory % Severity\",\r\n    MAX(CASE WHEN metric_name = 'Available Memory Percentage' THEN value END) AS \"Available Memory %\",\r\n    MAX(CASE WHEN metric_name = 'VmAvailabilityMetric' THEN severity END) AS \"Availability Severity\",\r\n \tMAX(CASE WHEN metric_name = 'VmAvailabilityMetric' THEN value END) AS \"Availability\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group as \"Resource Group\",\r\n    subscription_name as \"Subscription\",\r\n    subscription_id as \"Subscription ID\"\r\nFROM \r\n    public.metrics\r\nWHERE resource_type = 'microsoft.compute/virtualmachines'\r\nGROUP BY \r\n    subscription_name, subscription_id, resource_group, resource_type, resource_name\r\nORDER BY\r\n    \"Severity\" DESC;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "type": "table"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 21
+      },
+      "id": 6,
+      "panels": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "cellOptions": {
+                  "type": "color-text"
+                },
+                "filterable": false,
+                "inspect": false,
+                "width": 100
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "text"
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 104
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "#F2495C",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "0": {
+                            "index": 2,
+                            "text": "Healthy"
+                          },
+                          "1": {
+                            "index": 0,
+                            "text": "Warning"
+                          },
+                          "2": {
+                            "index": 1,
+                            "text": "Critical"
+                          }
+                        },
+                        "type": "value"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-background"
+                    }
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "center"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Metric Date"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 186
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "CPU %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 219
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "mode": "lcd",
+                      "type": "gauge",
+                      "valueDisplayMode": "text"
+                    }
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "CPU % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Memory % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 73
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Name"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 124
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "center"
+                  },
+                  {
+                    "id": "links",
+                    "value": [
+                      {
+                        "targetBlank": true,
+                        "title": "",
+                        "url": "https://grafana-par-dqhhgeb6fac7hsbz.eus.grafana.azure.com/d/beaxtg7dau7lsc/azure-postgresql?orgId=1&refresh=1m&var-sub=${__data.fields['Subscription ID']}&var-rg=${__data.fields['Resource Group']}&var-resource=${__data.fields['Resource Name']}\r\n"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Group"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 157
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Subscription"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 315
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Type"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 150
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Memory %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 91
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 90
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive"
+                },
+                "properties": [
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "0": {
+                            "index": 1,
+                            "text": "False"
+                          },
+                          "1": {
+                            "index": 0,
+                            "text": "True"
+                          }
+                        },
+                        "type": "value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Conn Failed Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Dead Locks Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Subscription ID"
+                },
+                "properties": [
+                  {
+                    "id": "custom.hidden",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 3,
+            "w": 24,
+            "x": 0,
+            "y": 22
+          },
+          "id": 10,
+          "options": {
+            "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "enablePagination": false,
+              "fields": "",
+              "reducer": [
+                "sum"
+              ],
+              "show": false
+            },
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Severity"
+              }
+            ]
+          },
+          "pluginVersion": "10.4.15",
+          "targets": [
+            {
+              "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "${ds}"
+              },
+              "editorMode": "code",
+              "format": "table",
+              "rawQuery": true,
+              "rawSql": "SELECT \r\n\tMAX(severity) as \"Severity\",\r\n    resource_name as \"Resource Name\",\r\n    MAX(CASE WHEN metric_name = 'cpu_percent' THEN severity END) AS \"CPU % Severity\",\r\n    MAX(CASE WHEN metric_name = 'cpu_percent' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'memory_percent' THEN severity END) AS \"Memory % Severity\",\r\n    MAX(CASE WHEN metric_name = 'memory_percent' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'storage_percent' THEN severity END) AS \"Storage % Severity\",\r\n    MAX(CASE WHEN metric_name = 'storage_percent' THEN value END) AS \"Storage %\",\r\n    MAX(CASE WHEN metric_name = 'is_db_alive' THEN severity END) AS \"DB Alive Severity\",\r\n \tMAX(CASE WHEN metric_name = 'is_db_alive' THEN value END) AS \"DB Alive\",\r\n    MAX(CASE WHEN metric_name = 'connections_failed' THEN severity END) AS \"Conn Failed Severity\",\r\n \tMAX(CASE WHEN metric_name = 'connections_failed' THEN value END) AS \"Conn Failed\", \t\r\n    MAX(CASE WHEN metric_name = 'deadlocks' THEN severity END) AS \"Dead Locks Severity\",\r\n \tMAX(CASE WHEN metric_name = 'deadlocks' THEN value END) AS \"Dead Locks\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group as \"Resource Group\",\r\n    subscription_name as \"Subscription\",\r\n    subscription_id as \"Subscription ID\"\r\nFROM \r\n    public.metrics\r\nWHERE resource_type = 'microsoft.dbforpostgresql/flexibleservers'\r\nGROUP BY \r\n    subscription_name, subscription_id, resource_group, resource_type, resource_name\r\nORDER BY\r\n    \"Severity\" DESC;\r\n    ",
+              "refId": "A",
+              "sql": {
+                "columns": [
+                  {
+                    "parameters": [],
+                    "type": "function"
+                  }
+                ],
+                "groupBy": [
+                  {
+                    "property": {
+                      "type": "string"
+                    },
+                    "type": "groupBy"
+                  }
+                ],
+                "limit": 50
+              }
+            }
+          ],
+          "type": "table"
+        }
+      ],
+      "title": "PostgreSQL",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 22
+      },
+      "id": 11,
+      "panels": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "cellOptions": {
+                  "type": "color-text"
+                },
+                "filterable": false,
+                "inspect": false,
+                "width": 100
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "text"
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 104
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "#F2495C",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "0": {
+                            "index": 2,
+                            "text": "Healthy"
+                          },
+                          "1": {
+                            "index": 0,
+                            "text": "Warning"
+                          },
+                          "2": {
+                            "index": 1,
+                            "text": "Critical"
+                          }
+                        },
+                        "type": "value"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-background"
+                    }
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "center"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Metric Date"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 186
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "CPU %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 219
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "mode": "lcd",
+                      "type": "gauge",
+                      "valueDisplayMode": "text"
+                    }
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "CPU % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Memory % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 73
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Name"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 124
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "center"
+                  },
+                  {
+                    "id": "links",
+                    "value": [
+                      {
+                        "targetBlank": true,
+                        "title": "",
+                        "url": "https://grafana-par-dqhhgeb6fac7hsbz.eus.grafana.azure.com/d/feepgk0htkmioc/azure-mysql?orgId=1&refresh=1m&var-sub=${__data.fields['Subscription ID']}&var-rg=${__data.fields['Resource Group']}&var-resource=${__data.fields['Resource Name']}"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Group"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 157
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Subscription"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 315
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Type"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 150
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Memory %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 91
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 90
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive"
+                },
+                "properties": [
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "0": {
+                            "index": 1,
+                            "text": "False"
+                          },
+                          "1": {
+                            "index": 0,
+                            "text": "True"
+                          }
+                        },
+                        "type": "value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Aborted Conn Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Dead Locks Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Aborted Conn"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 118
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Subscription ID"
+                },
+                "properties": [
+                  {
+                    "id": "custom.hidden",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 3,
+            "w": 24,
+            "x": 0,
+            "y": 23
+          },
+          "id": 15,
+          "options": {
+            "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "enablePagination": false,
+              "fields": "",
+              "reducer": [
+                "sum"
+              ],
+              "show": false
+            },
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Severity"
+              }
+            ]
+          },
+          "pluginVersion": "10.4.15",
+          "targets": [
+            {
+              "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "${ds}"
+              },
+              "editorMode": "code",
+              "format": "table",
+              "rawQuery": true,
+              "rawSql": "SELECT \r\n\tMAX(severity) as \"Severity\",\r\n    resource_name as \"Resource Name\",\r\n    MAX(CASE WHEN metric_name = 'cpu_percent' THEN severity END) AS \"CPU % Severity\",\r\n    MAX(CASE WHEN metric_name = 'cpu_percent' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'memory_percent' THEN severity END) AS \"Memory % Severity\",\r\n    MAX(CASE WHEN metric_name = 'memory_percent' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'storage_percent' THEN severity END) AS \"Storage % Severity\",\r\n    MAX(CASE WHEN metric_name = 'storage_percent' THEN value END) AS \"Storage %\",\r\n    MAX(CASE WHEN metric_name = 'aborted_connections' THEN severity END) AS \"Aborted Conn Severity\",\r\n \tMAX(CASE WHEN metric_name = 'aborted_connections' THEN value END) AS \"Aborted Conn\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group as \"Resource Group\",\r\n    subscription_name as \"Subscription\",\r\n    subscription_id as \"Subscription ID\"\r\nFROM \r\n    public.metrics\r\nWHERE resource_type = 'microsoft.dbformysql/flexibleservers'\r\nGROUP BY \r\n    subscription_name, subscription_id, resource_group, resource_type, resource_name\r\nORDER BY\r\n    \"Severity\" DESC;\r\n    ",
+              "refId": "A",
+              "sql": {
+                "columns": [
+                  {
+                    "parameters": [],
+                    "type": "function"
+                  }
+                ],
+                "groupBy": [
+                  {
+                    "property": {
+                      "type": "string"
+                    },
+                    "type": "groupBy"
+                  }
+                ],
+                "limit": 50
+              }
+            }
+          ],
+          "type": "table"
+        }
+      ],
+      "title": "MySQL",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 23
+      },
+      "id": 16,
+      "panels": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "cellOptions": {
+                  "type": "color-text"
+                },
+                "filterable": false,
+                "inspect": false,
+                "width": 100
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "text"
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 104
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "#F2495C",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "0": {
+                            "index": 2,
+                            "text": "Healthy"
+                          },
+                          "1": {
+                            "index": 0,
+                            "text": "Warning"
+                          },
+                          "2": {
+                            "index": 1,
+                            "text": "Critical"
+                          }
+                        },
+                        "type": "value"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-background"
+                    }
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "center"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Metric Date"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 186
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "CPU %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 219
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "mode": "lcd",
+                      "type": "gauge",
+                      "valueDisplayMode": "text"
+                    }
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "CPU % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Memory % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 73
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Name"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 124
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "center"
+                  },
+                  {
+                    "id": "links",
+                    "value": [
+                      {
+                        "targetBlank": true,
+                        "title": "",
+                        "url": "https://grafana-par-dqhhgeb6fac7hsbz.eus.grafana.azure.com/d/azure-redis/azure-redis?orgId=1&refresh=1m&var-Subscriptions=${__data.fields['Subscription ID']}&var-ResourceGroup=${__data.fields['Resource Group']}&var-ResourceName=${__data.fields['Resource Name']}"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Group"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 157
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Subscription"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 315
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Type"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 150
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Memory %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 91
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 90
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive"
+                },
+                "properties": [
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "0": {
+                            "index": 1,
+                            "text": "False"
+                          },
+                          "1": {
+                            "index": 0,
+                            "text": "True"
+                          }
+                        },
+                        "type": "value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Errors Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Server Load % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Errors"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 88
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Server Load %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 122
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Subscription ID"
+                },
+                "properties": [
+                  {
+                    "id": "custom.hidden",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 3,
+            "w": 24,
+            "x": 0,
+            "y": 24
+          },
+          "id": 17,
+          "options": {
+            "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "enablePagination": false,
+              "fields": "",
+              "reducer": [
+                "sum"
+              ],
+              "show": false
+            },
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Severity"
+              }
+            ]
+          },
+          "pluginVersion": "10.4.15",
+          "targets": [
+            {
+              "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "${ds}"
+              },
+              "editorMode": "code",
+              "format": "table",
+              "rawQuery": true,
+              "rawSql": "SELECT \r\n\tMAX(severity) as \"Severity\",\r\n    resource_name as \"Resource Name\",\r\n    MAX(CASE WHEN metric_name = 'percentProcessorTime' THEN severity END) AS \"CPU % Severity\",\r\n    MAX(CASE WHEN metric_name = 'percentProcessorTime' THEN value END) AS \"CPU %\",\r\n    MAX(CASE WHEN metric_name = 'usedmemorypercentage' THEN severity END) AS \"Memory % Severity\",\r\n    MAX(CASE WHEN metric_name = 'usedmemorypercentage' THEN value END) AS \"Memory %\",\r\n    MAX(CASE WHEN metric_name = 'serverLoad' THEN severity END) AS \"Server Load % Severity\",\r\n    MAX(CASE WHEN metric_name = 'serverLoad' THEN value END) AS \"Server Load %\",\r\n    MAX(CASE WHEN metric_name = 'errors' THEN severity END) AS \"Errors Severity\",\r\n \tMAX(CASE WHEN metric_name = 'errors' THEN value END) AS \"Errors\", \t\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group as \"Resource Group\",\r\n    subscription_name as \"Subscription\",\r\n    subscription_id as \"Subscription ID\"\r\nFROM \r\n    public.metrics\r\nWHERE resource_type = 'microsoft.cache/redis'\r\nGROUP BY \r\n    subscription_name, subscription_id, resource_group, resource_type, resource_name\r\nORDER BY\r\n    \"Severity\" DESC;",
+              "refId": "A",
+              "sql": {
+                "columns": [
+                  {
+                    "parameters": [],
+                    "type": "function"
+                  }
+                ],
+                "groupBy": [
+                  {
+                    "property": {
+                      "type": "string"
+                    },
+                    "type": "groupBy"
+                  }
+                ],
+                "limit": 50
+              }
+            }
+          ],
+          "type": "table"
+        }
+      ],
+      "title": "Redis",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 24
+      },
+      "id": 21,
+      "panels": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "cellOptions": {
+                  "type": "color-text"
+                },
+                "filterable": false,
+                "inspect": false,
+                "width": 100
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "text"
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 104
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "#F2495C",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "0": {
+                            "index": 2,
+                            "text": "Healthy"
+                          },
+                          "1": {
+                            "index": 0,
+                            "text": "Warning"
+                          },
+                          "2": {
+                            "index": 1,
+                            "text": "Critical"
+                          }
+                        },
+                        "type": "value"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-background"
+                    }
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "center"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Metric Date"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 186
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Used Capacity Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Name"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 226
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "center"
+                  },
+                  {
+                    "id": "links",
+                    "value": [
+                      {
+                        "targetBlank": true,
+                        "title": "",
+                        "url": "https://grafana-par-dqhhgeb6fac7hsbz.eus.grafana.azure.com/d/2n2E8CrGk/azure-storage-accounts?orgId=1&refresh=1m&var-sub=${__data.fields['Subscription ID']}&var-rg=${__data.fields['Resource Group']}&var-resource=${__data.fields['Resource Name']}\r\n"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Group"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 157
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Subscription"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 315
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Type"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 150
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Used Capacity (bytes)"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 178
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "E2E Latency Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Availability % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "E2E Latency (ms)"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 146
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Availability %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 124
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Subscription ID"
+                },
+                "properties": [
+                  {
+                    "id": "custom.hidden",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 5,
+            "w": 24,
+            "x": 0,
+            "y": 25
+          },
+          "id": 27,
+          "options": {
+            "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "enablePagination": false,
+              "fields": "",
+              "reducer": [
+                "sum"
+              ],
+              "show": false
+            },
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Severity"
+              }
+            ]
+          },
+          "pluginVersion": "10.4.15",
+          "targets": [
+            {
+              "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "${ds}"
+              },
+              "editorMode": "code",
+              "format": "table",
+              "rawQuery": true,
+              "rawSql": "SELECT \r\n\tMAX(severity) as \"Severity\",\r\n    resource_name as \"Resource Name\",\r\n    MAX(CASE WHEN metric_name = 'Availability' THEN severity END) AS \"Availability % Severity\",\r\n    MAX(CASE WHEN metric_name = 'Availability' THEN value END) AS \"Availability %\",\r\n    MAX(CASE WHEN metric_name = 'SuccessE2ELatency' THEN severity END) AS \"E2E Latency Severity\",\r\n    MAX(CASE WHEN metric_name = 'SuccessE2ELatency' THEN value END) AS \"E2E Latency (ms)\",    \r\n    MAX(CASE WHEN metric_name = 'UsedCapacity' THEN severity END) AS \"Used Capacity Severity\",\r\n    MAX(CASE WHEN metric_name = 'UsedCapacity' THEN value END) AS \"Used Capacity (bytes)\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group as \"Resource Group\",\r\n    subscription_name as \"Subscription\",\r\n    subscription_id as \"Subscription ID\"\r\nFROM \r\n    public.metrics\r\nWHERE resource_type = 'microsoft.storage/storageaccounts'\r\nGROUP BY \r\n    subscription_name, subscription_id, resource_group, resource_type, resource_name\r\nORDER BY\r\n    \"Severity\" DESC;",
+              "refId": "A",
+              "sql": {
+                "columns": [
+                  {
+                    "parameters": [],
+                    "type": "function"
+                  }
+                ],
+                "groupBy": [
+                  {
+                    "property": {
+                      "type": "string"
+                    },
+                    "type": "groupBy"
+                  }
+                ],
+                "limit": 50
+              }
+            }
+          ],
+          "type": "table"
+        }
+      ],
+      "title": "Storage Account",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 25
+      },
+      "id": 22,
+      "panels": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "${ds}"
+          },
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "cellOptions": {
+                  "type": "color-text"
+                },
+                "filterable": false,
+                "inspect": false,
+                "width": 100
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "text"
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 104
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "#F2495C",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "0": {
+                            "index": 2,
+                            "text": "Healthy"
+                          },
+                          "1": {
+                            "index": 0,
+                            "text": "Warning"
+                          },
+                          "2": {
+                            "index": 1,
+                            "text": "Critical"
+                          }
+                        },
+                        "type": "value"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-background"
+                    }
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "center"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Metric Date"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 186
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Availability %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 117
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "auto"
+                    }
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Availability % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Capacity Used % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "right"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 73
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Name"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 226
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "center"
+                  },
+                  {
+                    "id": "links",
+                    "value": [
+                      {
+                        "targetBlank": true,
+                        "title": "",
+                        "url": "https://grafana-par-dqhhgeb6fac7hsbz.eus.grafana.azure.com/d/tQZAMYrMM/azure-key-vaults?orgId=1&refresh=1m&var-sub=${__data.fields['Subscription ID']}&var-rg=${__data.fields['Resource Group']}&var-resource=${__data.fields['Resource Name']}\r\n"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Group"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 157
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Subscription"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 315
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Resource Type"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 150
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Capacity Used %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 137
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 90
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Storage %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "DB Alive"
+                },
+                "properties": [
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "0": {
+                            "index": 1,
+                            "text": "False"
+                          },
+                          "1": {
+                            "index": 0,
+                            "text": "True"
+                          }
+                        },
+                        "type": "value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Service API Latency Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Server Load % Severity"
+                },
+                "properties": [
+                  {
+                    "id": "custom.cellOptions",
+                    "value": {
+                      "type": "color-text"
+                    }
+                  },
+                  {
+                    "id": "custom.width",
+                    "value": 20
+                  },
+                  {
+                    "id": "displayName",
+                    "value": "‎"
+                  },
+                  {
+                    "id": "thresholds",
+                    "value": {
+                      "mode": "absolute",
+                      "steps": [
+                        {
+                          "color": "green"
+                        },
+                        {
+                          "color": "#EAB839",
+                          "value": 1
+                        },
+                        {
+                          "color": "red",
+                          "value": 2
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id": "mappings",
+                    "value": [
+                      {
+                        "options": {
+                          "from": 0,
+                          "result": {
+                            "index": 0,
+                            "text": "●"
+                          },
+                          "to": 2
+                        },
+                        "type": "range"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Service API Latency (ms)"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 190
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Server Load %"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 102
+                  },
+                  {
+                    "id": "custom.align",
+                    "value": "left"
+                  }
+                ]
+              },
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "Subscription ID"
+                },
+                "properties": [
+                  {
+                    "id": "custom.hidden",
+                    "value": true
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 4,
+            "w": 24,
+            "x": 0,
+            "y": 26
+          },
+          "id": 23,
+          "options": {
+            "cellHeight": "sm",
+            "footer": {
+              "countRows": false,
+              "enablePagination": false,
+              "fields": "",
+              "reducer": [
+                "sum"
+              ],
+              "show": false
+            },
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": true,
+                "displayName": "Severity"
+              }
+            ]
+          },
+          "pluginVersion": "10.4.15",
+          "targets": [
+            {
+              "datasource": {
+                "type": "grafana-postgresql-datasource",
+                "uid": "${ds}"
+              },
+              "editorMode": "code",
+              "format": "table",
+              "rawQuery": true,
+              "rawSql": "SELECT \r\n\tMAX(severity) as \"Severity\",\r\n    resource_name as \"Resource Name\",\r\n    MAX(CASE WHEN metric_name = 'Availability' THEN severity END) AS \"Availability % Severity\",\r\n    MAX(CASE WHEN metric_name = 'Availability' THEN value END) AS \"Availability %\",\r\n    MAX(CASE WHEN metric_name = 'SaturationShoebox' THEN severity END) AS \"Capacity Used % Severity\",\r\n    MAX(CASE WHEN metric_name = 'SaturationShoebox' THEN value END) AS \"Capacity Used %\",\r\n    MAX(CASE WHEN metric_name = 'ServiceApiLatency' THEN severity END) AS \"Service API Latency Severity\",\r\n    MAX(CASE WHEN metric_name = 'ServiceApiLatency' THEN value END) AS \"Service API Latency (ms)\",\r\n    MAX(metric_date) as \"Metric Date\",\r\n    resource_group as \"Resource Group\",\r\n    subscription_name as \"Subscription\",\r\n    subscription_id as \"Subscription ID\"\r\nFROM \r\n    public.metrics\r\nWHERE resource_type = 'microsoft.keyvault/vaults'\r\nGROUP BY \r\n    subscription_name, subscription_id, resource_group, resource_type, resource_name\r\nORDER BY\r\n    \"Severity\" DESC;",
+              "refId": "A",
+              "sql": {
+                "columns": [
+                  {
+                    "parameters": [],
+                    "type": "function"
+                  }
+                ],
+                "groupBy": [
+                  {
+                    "property": {
+                      "type": "string"
+                    },
+                    "type": "groupBy"
+                  }
+                ],
+                "limit": 50
+              }
+            }
+          ],
+          "type": "table"
+        }
+      ],
+      "title": "Key Vault",
+      "type": "row"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 39,
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "current": {
+          "selected": false,
+          "text": "grafana-postgresql-datasource",
+          "value": "becmmwu73r4sge"
+        },
+        "hide": 0,
+        "includeAll": false,
+        "label": "DataSource",
+        "multi": false,
+        "name": "ds",
+        "options": [],
+        "query": "grafana-postgresql-datasource",
+        "queryValue": "",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "type": "datasource"
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "BBA Overall Dashboard",
+  "uid": "deefwhbqctkaof",
+  "version": 42,
+  "weekStart": ""
+}
